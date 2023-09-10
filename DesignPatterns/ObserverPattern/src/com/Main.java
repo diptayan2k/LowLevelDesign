@@ -1,3 +1,5 @@
+package com;
+
 import com.observable.IphoneObservable;
 import com.observer.EmailObserverImpl;
 import com.observer.MessageObserverImpl;
