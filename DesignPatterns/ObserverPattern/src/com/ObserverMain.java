@@ -4,7 +4,7 @@ import com.observable.IphoneObservable;
 import com.observer.EmailObserverImpl;
 import com.observer.MessageObserverImpl;
 
-public class Main {
+public class ObserverMain {
 
     public static void main(String[] args) {
 
