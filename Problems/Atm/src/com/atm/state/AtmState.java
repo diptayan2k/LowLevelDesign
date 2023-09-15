@@ -30,6 +30,7 @@ public abstract class AtmState {
     public void exit(Atm atm, String message){
 
         System.out.println(message);
+        System.out.println("Please collect your card!!");
         atm.setAtmState(new AtmIdleState());
     }
 }

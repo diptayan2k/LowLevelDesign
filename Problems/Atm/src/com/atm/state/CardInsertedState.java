@@ -11,6 +11,6 @@ public class CardInsertedState extends AtmState{
             atm.setAtmState(new OptionSelectionState());
             return;
         }
-        exit(atm,"Invalid Pin!!");
+        System.out.println("Invalid Pin!!");
     }
 }

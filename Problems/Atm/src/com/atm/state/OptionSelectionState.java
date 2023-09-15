@@ -7,7 +7,7 @@ public class OptionSelectionState extends AtmState {
 
     @Override
     public void selectOptiom(Atm atm, AtmOptions atmOptions){
-
+        System.out.println("Option Selection page!!");
         switch (atmOptions){
             case CASH_WITHDRAWL:
                 atm.setAtmState(new CashWithdrawlState());
@@ -16,7 +16,7 @@ public class OptionSelectionState extends AtmState {
                 atm.setAtmState(new BalanceEnquiryState());
                 break;
             default:
-                exit(atm,"Invalid selection");
+                System.out.println("Invalid selection");
         }
 
 

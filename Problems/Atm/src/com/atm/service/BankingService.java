@@ -7,18 +7,18 @@ import com.atm.providers.SBIBankProvider;
 
 import java.util.Objects;
 
-public class BalanceEnquiryService {
+public class BankingService {
 
-    private BankProvider bankProvider;
-    private Card card;
+    private final BankProvider bankProvider;
+    private final Card card;
 
-    public BalanceEnquiryService(Card card) {
+    public BankingService(Card card) {
         this.card = card;
         Bank bank = card.getBank();
 
         switch (card.getBank()){
             case STATE_BANK_OF_INDIA:
-                this.bankProvider = new SBIBankProvider();
+                this.bankProvider = SBIBankProvider.getInstance();
                 break;
             default:
                 this.bankProvider = null;
@@ -28,7 +28,10 @@ public class BalanceEnquiryService {
     public Integer getBalance(){
         if(Objects.isNull(bankProvider)) return null;
         return bankProvider.getBalance(card.getCardNo());
+    }
 
+    public void deductBalance(int amount){
+        bankProvider.deductBalance(card.getCardNo(), amount);
     }
 
 }

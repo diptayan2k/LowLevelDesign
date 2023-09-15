@@ -32,7 +32,6 @@ public class AtmRoom {
         System.out.println("Atm Balance : " +  atm.getBalance());
 
         System.out.println("----------------------------------");
-        atm.getAtmState().selectOptiom(atm ,AtmOptions.CASH_WITHDRAWL);
         atm.getAtmState().cashWithdrawl(atm, card, 499);
         System.out.println("Atm Balance : " +  atm.getBalance());
 
@@ -40,6 +39,15 @@ public class AtmRoom {
         atm.getAtmState().selectOptiom(atm ,AtmOptions.CASH_WITHDRAWL);
         atm.getAtmState().cashWithdrawl(atm, card, 450);
         System.out.println("Atm Balance : " +  atm.getBalance());
+        System.out.println("----------------------------------");
+        atm.getAtmState().selectOptiom(atm ,AtmOptions.CASH_WITHDRAWL);
+        atm.getAtmState().cashWithdrawl(atm, card, 60);
+        System.out.println("Atm Balance : " +  atm.getBalance());
+        System.out.println("----------------------------------");
+        atm.getAtmState().selectOptiom(atm ,AtmOptions.CASH_WITHDRAWL);
+        atm.getAtmState().cashWithdrawl(atm, card, 40);
+        System.out.println("Atm Balance : " +  atm.getBalance());
+
 
 
     }
