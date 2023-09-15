@@ -1,4 +1,4 @@
-package com.models;
+package com.bookmyshow.models;
 
 public class Vehicle {
 

@@ -1,4 +1,4 @@
-package com.models;
+package com.bookmyshow.models;
 
 import java.util.ArrayList;
 import java.util.List;

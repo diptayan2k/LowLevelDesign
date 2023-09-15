@@ -1,4 +1,4 @@
-package com.service;
+package com.bookmyshow.service;
 
 public class LuxuryCarCostStrategy implements CostStrategy{
     @Override

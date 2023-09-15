@@ -1,12 +1,12 @@
 package com;
 
 import com.exceptions.ParkingLotException;
-import com.models.ParkingLot;
-import com.models.Ticket;
-import com.service.CostStrategy;
-import com.service.LuxuryCarCostStrategy;
-import com.service.ParkingService;
-import com.service.PassengerCarCostStrategy;
+import com.bookmyshow.models.ParkingLot;
+import com.bookmyshow.models.Ticket;
+import com.bookmyshow.service.CostStrategy;
+import com.bookmyshow.service.LuxuryCarCostStrategy;
+import com.bookmyshow.service.ParkingService;
+import com.bookmyshow.service.PassengerCarCostStrategy;
 
 public class ParkingLotMain {
 
