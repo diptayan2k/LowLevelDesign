@@ -1,6 +1,6 @@
-package com.bookmyshow.models;
+package com.models;
 
-import com.bookmyshow.service.CostStrategy;
+import com.cost.CostStrategy;
 
 public class Ticket {
 

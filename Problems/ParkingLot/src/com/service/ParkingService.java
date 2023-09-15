@@ -1,11 +1,12 @@
-package com.bookmyshow.service;
+package com.service;
 
+import com.cost.CostStrategy;
 import com.exceptions.ParkingLotErrors;
 import com.exceptions.ParkingLotException;
-import com.bookmyshow.models.ParkingLot;
-import com.bookmyshow.models.Slot;
-import com.bookmyshow.models.Ticket;
-import com.bookmyshow.models.Vehicle;
+import com.models.ParkingLot;
+import com.models.Slot;
+import com.models.Ticket;
+import com.models.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;

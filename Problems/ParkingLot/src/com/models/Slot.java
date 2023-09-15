@@ -1,4 +1,4 @@
-package com.bookmyshow.models;
+package com.models;
 
 public class Slot {
     int id;
