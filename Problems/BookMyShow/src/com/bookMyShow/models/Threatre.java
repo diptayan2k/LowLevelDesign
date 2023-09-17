@@ -5,11 +5,31 @@ import java.util.List;
 public class Threatre {
 
     private String id;
+    private String cityId;
     private List<Screen> screens;
+    private City city;
 
-    public Threatre(String id, List<Screen> screens) {
+    public Threatre(String id, String cityId, List<Screen> screens, City city) {
         this.id = id;
+        this.cityId = cityId;
         this.screens = screens;
+        this.city = city;
+    }
+
+    public City getCity() {
+        return city;
+    }
+
+    public void setCity(City city) {
+        this.city = city;
+    }
+
+    public String getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(String cityId) {
+        this.cityId = cityId;
     }
 
     public String getId() {

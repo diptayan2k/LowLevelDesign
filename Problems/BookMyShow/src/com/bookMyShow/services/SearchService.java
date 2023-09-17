@@ -30,6 +30,6 @@ public class SearchService {
     }
 
     public List<Show> getShowsInCity(Movie movie, City city){
-        return threatreShowProvider.getShowFromMovie(movie, city.getThreatres());
+        return threatreShowProvider.getShowInCity(movie, city);
     }
 }

@@ -1,5 +1,6 @@
 package com.bookMyShow.providers;
 
+import com.bookMyShow.models.City;
 import com.bookMyShow.models.Movie;
 import com.bookMyShow.models.Show;
 import com.bookMyShow.models.Threatre;
@@ -31,6 +32,13 @@ public class ThreatreShowProvider {
     public List<Show> getShowFromMovie(Movie movie, List<Threatre> threatres){
         return showList.stream()
                 .filter(show -> threatres.contains(show.getThreatre()))
+                .filter(show -> Objects.equals(show.getMovie().getId(), movie.getId()))
+                .collect(Collectors.toList());
+    }
+
+    public List<Show> getShowInCity(Movie movie, City city){
+        return showList.stream()
+                .filter(show -> show.getThreatre().getCity().equals(city))
                 .filter(show -> Objects.equals(show.getMovie().getId(), movie.getId()))
                 .collect(Collectors.toList());
     }

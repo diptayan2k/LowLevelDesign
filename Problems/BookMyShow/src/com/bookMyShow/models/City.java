@@ -5,12 +5,10 @@ import java.util.List;
 public class City {
     private String name;
     private String id;
-    private List<Threatre> threatres;
 
-    public City(String name, String id, List<Threatre> threatres) {
+    public City(String name, String id) {
         this.name = name;
         this.id = id;
-        this.threatres = threatres;
     }
 
     public String getName() {
@@ -29,11 +27,4 @@ public class City {
         this.id = id;
     }
 
-    public List<Threatre> getThreatres() {
-        return threatres;
-    }
-
-    public void setThreatres(List<Threatre> threatres) {
-        this.threatres = threatres;
-    }
 }
