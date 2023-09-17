@@ -2,6 +2,7 @@ package com.bookMyShow.providers;
 
 import com.bookMyShow.models.Movie;
 import com.bookMyShow.models.Show;
+import com.bookMyShow.models.Threatre;
 
 import java.util.List;
 import java.util.Objects;
@@ -27,7 +28,10 @@ public class ThreatreShowProvider {
         showList.add(show);
     }
 
-    public List<Show> getShowFromMovie(Movie movie){
-        return showList.stream().filter(show -> Objects.equals(show.getMovie().getId(), movie.getId())).collect(Collectors.toList());
+    public List<Show> getShowFromMovie(Movie movie, List<Threatre> threatres){
+        return showList.stream()
+                .filter(show -> threatres.contains(show.getThreatre()))
+                .filter(show -> Objects.equals(show.getMovie().getId(), movie.getId()))
+                .collect(Collectors.toList());
     }
 }

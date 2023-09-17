@@ -1,9 +1,6 @@
 package com.bookMyShow.services;
 
-import com.bookMyShow.models.City;
-import com.bookMyShow.models.Movie;
-import com.bookMyShow.models.Seat;
-import com.bookMyShow.models.Show;
+import com.bookMyShow.models.*;
 import com.bookMyShow.providers.CityMovieProvider;
 import com.bookMyShow.providers.ThreatreShowProvider;
 
@@ -28,7 +25,11 @@ public class SearchService {
         return cityMovieProvider.getMoviesInCity(city);
     }
 
-    public List<Show> getShows(Movie movie){
-       return threatreShowProvider.getShowFromMovie(movie);
+    public List<Show> getShows(Movie movie, List<Threatre> threatres){
+       return threatreShowProvider.getShowFromMovie(movie, threatres);
+    }
+
+    public List<Show> getShowsInCity(Movie movie, City city){
+        return threatreShowProvider.getShowFromMovie(movie, city.getThreatres());
     }
 }
