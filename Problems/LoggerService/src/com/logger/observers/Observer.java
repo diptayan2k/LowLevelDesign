@@ -1,6 +1,6 @@
 package com.logger.observers;
 
-public abstract class Observer {
+public interface Observer {
 
-    public abstract void display(String message);
+    public void display(String message);
 }

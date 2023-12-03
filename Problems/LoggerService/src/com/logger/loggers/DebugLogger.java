@@ -1,4 +1,4 @@
-package com.logger;
+package com.logger.loggers;
 
 public class DebugLogger extends AbstractLogger {
 

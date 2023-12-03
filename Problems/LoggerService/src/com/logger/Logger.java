@@ -1,8 +1,11 @@
 package com.logger;
 
+import com.logger.loggers.AbstractLogger;
+import com.logger.loggers.DebugLogger;
+import com.logger.loggers.ErrorLogger;
+import com.logger.loggers.InfoLogger;
 import com.logger.observers.Observer;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

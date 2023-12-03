@@ -1,11 +1,11 @@
-package com.logger;
+package com.logger.loggers;
 
 import com.logger.observers.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class AbstractLogger {
+public abstract class AbstractLogger implements ObserveSubject {
 
     private int level;
     private AbstractLogger nextAbstractLogger;
