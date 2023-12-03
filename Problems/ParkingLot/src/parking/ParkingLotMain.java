@@ -1,12 +1,12 @@
-package com;
+package parking;
 
-import com.exceptions.ParkingLotException;
-import com.models.ParkingLot;
-import com.models.Ticket;
-import com.cost.CostStrategy;
-import com.cost.LuxuryCarCostStrategy;
-import com.service.ParkingService;
-import com.cost.PassengerCarCostStrategy;
+import parking.exceptions.ParkingLotException;
+import parking.models.ParkingLot;
+import parking.models.Ticket;
+import parking.cost.CostStrategy;
+import parking.cost.LuxuryCarCostStrategy;
+import parking.service.ParkingService;
+import parking.cost.PassengerCarCostStrategy;
 
 public class ParkingLotMain {
 

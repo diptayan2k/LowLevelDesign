@@ -1,4 +1,4 @@
-package com.cost;
+package parking.cost;
 
 public interface CostStrategy {
 

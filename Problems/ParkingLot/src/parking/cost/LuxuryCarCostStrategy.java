@@ -1,4 +1,4 @@
-package com.cost;
+package parking.cost;
 
 public class LuxuryCarCostStrategy implements CostStrategy{
     @Override

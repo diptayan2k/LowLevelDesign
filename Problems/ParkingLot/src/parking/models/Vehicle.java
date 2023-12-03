@@ -1,4 +1,4 @@
-package com.models;
+package parking.models;
 
 public class Vehicle {
 

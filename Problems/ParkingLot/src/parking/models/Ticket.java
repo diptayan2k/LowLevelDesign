@@ -1,6 +1,6 @@
-package com.models;
+package parking.models;
 
-import com.cost.CostStrategy;
+import parking.cost.CostStrategy;
 
 public class Ticket {
 

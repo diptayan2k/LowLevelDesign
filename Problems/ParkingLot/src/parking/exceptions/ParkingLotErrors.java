@@ -1,4 +1,4 @@
-package com.exceptions;
+package parking.exceptions;
 
 public enum ParkingLotErrors {
 

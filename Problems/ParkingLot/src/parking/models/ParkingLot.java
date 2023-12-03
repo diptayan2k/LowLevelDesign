@@ -1,4 +1,4 @@
-package com.models;
+package parking.models;
 
 import java.util.ArrayList;
 import java.util.List;

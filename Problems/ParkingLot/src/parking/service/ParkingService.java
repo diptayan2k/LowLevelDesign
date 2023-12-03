@@ -1,12 +1,12 @@
-package com.service;
+package parking.service;
 
-import com.cost.CostStrategy;
-import com.exceptions.ParkingLotErrors;
-import com.exceptions.ParkingLotException;
-import com.models.ParkingLot;
-import com.models.Slot;
-import com.models.Ticket;
-import com.models.Vehicle;
+import parking.cost.CostStrategy;
+import parking.exceptions.ParkingLotErrors;
+import parking.exceptions.ParkingLotException;
+import parking.models.ParkingLot;
+import parking.models.Slot;
+import parking.models.Ticket;
+import parking.models.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;

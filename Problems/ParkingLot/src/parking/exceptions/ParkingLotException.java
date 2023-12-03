@@ -1,4 +1,4 @@
-package com.exceptions;
+package parking.exceptions;
 
 public class ParkingLotException extends RuntimeException {
 

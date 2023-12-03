@@ -1,6 +1,4 @@
-package com.cost;
-
-import com.cost.CostStrategy;
+package parking.cost;
 
 public class PassengerCarCostStrategy implements CostStrategy {
     @Override
